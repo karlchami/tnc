@@ -3,27 +3,32 @@
 @section('content')
     <div class="columns is-centered">
         <div class="section column is-half">
-            <div class="box">
-                <div class="level">
-                    <a class="button level-left" href="/event">Back</a>
-                        <span class="level-item title is-bold">
-                        Event Members
-                         </span>
-                </div>
+            <nav class="panel">
+                <a class="level-item panel-heading">
+                    Events
+                </a>
                 <div class="panel-block">
                     <p class="control has-icons-left">
-                        <input class="input" type="text" placeholder="Search Members">
+                        <input class="input" type="text" placeholder="Search Event">
                         <span class="icon is-left">
               <i class="fas fa-search" aria-hidden="true"></i>
             </span>
                     </p>
+                    <a class="button" href="edit_event">+</a>
                 </div>
+                <p class="panel-tabs">
+                    <a class="is-active">All</a>
+                    <a>Joined</a>
+                    <a>Upcoming</a>
+                </p>
                 <div class="panel-block">
                     <div class="container">
                         <form>
                             <div class="field">
-                                <a class="is-pulled-left is-active" href="user_profile">Member 1</a>
-                                <a class="is-pulled-right is-active">Manager</a>
+                                <a class="is-pulled-left is-active" href="event">Event 1</a>
+                            </div>
+                            <div class="field">
+                                <a class="button is-pulled-right is-small">Join</a>
                             </div>
                         </form>
                     </div>
@@ -32,8 +37,10 @@
                     <div class="container">
                         <form>
                             <div class="field">
-                                <a class="is-pulled-left is-active" href="user_profile">Member 2</a>
-                                <a class="is-pulled-right is-active">Participant</a>
+                                <a class="is-pulled-left is-active" href="event">Event 2</a>
+                            </div>
+                            <div class="field">
+                                <a class="button is-pulled-right is-small is-static">Requested</a>
                             </div>
                         </form>
                     </div>
@@ -42,8 +49,10 @@
                     <div class="container">
                         <form>
                             <div class="field">
-                                <a class="is-pulled-left is-active" href="user_profile">Member 3</a>
-                                <a class="is-pulled-right is-active">Participant</a>
+                                <a class="is-pulled-left is-active" href="event">Event 3</a>
+                            </div>
+                            <div class="field">
+                                <a class="button is-pulled-right is-small">Join</a>
                             </div>
                         </form>
                     </div>
@@ -52,8 +61,10 @@
                     <div class="container">
                         <form>
                             <div class="field">
-                                <a class="is-pulled-left is-active" href="user_profile">Member 4</a>
-                                <a class="is-pulled-right is-active">Participant</a>
+                                <a class="is-pulled-left is-active" href="event">Event 4</a>
+                            </div>
+                            <div class="field">
+                                <a class="button is-pulled-right is-small">Join</a>
                             </div>
                         </form>
                     </div>
@@ -63,4 +74,3 @@
         </div>
     </div>
 @endsection
-
