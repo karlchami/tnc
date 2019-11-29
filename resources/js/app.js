@@ -22,6 +22,7 @@ require('vue-longpress');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('connection_tnc', require('./components/connection_tnc').default);
+Vue.component('page', require('./components/page').default);
 Vue.component('longpress', require("vue-longpress"));
 
 /**
