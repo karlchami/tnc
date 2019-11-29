@@ -19,7 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
+<body style="background-image: url('https://fcit.usf.edu/matrix/wp-content/uploads/2019/03/CircuitBoard-K-Wide.jpg');">
         <main class="py-4">
             @yield('content')
         </main>
