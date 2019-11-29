@@ -1878,14 +1878,39 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'connection_tnc',
   data: function data() {
-    return {};
+    return {
+      loading: false
+    };
   },
   methods: {
     doDelete: function doDelete() {
-      this.$refs.deleteButton.reset();
+      window.location.href = '/path';
+    },
+    trying: function trying() {
+      window.location.href = '/path';
+    },
+    wait: function wait(ms) {
+      var start = new Date().getTime();
+      var end = start;
+
+      while (end < start + ms) {
+        end = new Date().getTime();
+      }
+    },
+    scan: function scan() {
+      this.loading = true;
+      this.wait(550);
+      this.loading = false;
     }
   },
   components: {
@@ -6353,7 +6378,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.wrapper[data-v-0ece1b53] {\n    text-align: center;\n    height:800px;\n}\n.centerme[data-v-0ece1b53] {\n    margin-top:15%;\n    height: 300px;\n    width: 300px;\n    opacity: 0.6;\n    filter: alpha(opacity=60);\n    background-color: black;\n    color: white;\n}\n.photo[data-v-0ece1b53]{\n    width:200px;\n    height:200px;\n}\nh1[data-v-0ece1b53]{\n    color: white;\n    margin-right: 90%;\n    font-size: 30px;\n    font-weight: 900;\n}\n", ""]);
+exports.push([module.i, "\n.wrapper[data-v-0ece1b53] {\n    text-align: center;\n    height:800px;\n}\n.centerme[data-v-0ece1b53] {\n    margin-top:9%;\n    height: 300px;\n    width: 300px;\n    opacity: 0.6;\n    filter: alpha(opacity=60);\n    background-color: black;\n    color: white;\n    font-size: 15px;\n    font-weight: 600;\n}\n.photo[data-v-0ece1b53]{\n    width:200px;\n    height:200px;\n}\nh1[data-v-0ece1b53]{\n    color: white;\n    margin-right: 90%;\n    font-size: 30px;\n    font-weight: 900;\n}\nh2[data-v-0ece1b53]{\n    color: white;\n    margin-left: 80%;\n    font-size: 12px;\n    font-weight: 400;\n}\n.swapping-squares-spinner[data-v-0ece1b53], .swapping-squares-spinner *[data-v-0ece1b53] {\n    box-sizing: border-box;\n    color: white;\n}\n.swapping-squares-spinner[data-v-0ece1b53] {\n    height: 65px;\n    width: 65px;\n    position: relative;\n    display: -webkit-box;\n    display: flex;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n            flex-direction: row;\n    -webkit-box-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n            align-items: center;\n    color: white;\n}\n.swapping-squares-spinner .square[data-v-0ece1b53] {\n    height: calc(65px * 0.25 / 1.3);\n    width:  calc(65px * 0.25 / 1.3);\n    -webkit-animation-duration: 1000ms;\n            animation-duration: 1000ms;\n    border: calc(65px * 0.04 / 1.3) solid #ff1d5e;\n    margin-right: auto;\n    margin-left: auto;\n    position: absolute;\n    -webkit-animation-iteration-count: infinite;\n            animation-iteration-count: infinite;\n}\n.swapping-squares-spinner .square[data-v-0ece1b53]:nth-child(1) {\n    -webkit-animation-name: swapping-squares-animation-child-1-data-v-0ece1b53;\n            animation-name: swapping-squares-animation-child-1-data-v-0ece1b53;\n    -webkit-animation-delay: 500ms;\n            animation-delay: 500ms;\n}\n.swapping-squares-spinner .square[data-v-0ece1b53]:nth-child(2) {\n    -webkit-animation-name: swapping-squares-animation-child-2-data-v-0ece1b53;\n            animation-name: swapping-squares-animation-child-2-data-v-0ece1b53;\n    -webkit-animation-delay: 0ms;\n            animation-delay: 0ms;\n}\n.swapping-squares-spinner .square[data-v-0ece1b53]:nth-child(3) {\n    -webkit-animation-name: swapping-squares-animation-child-3-data-v-0ece1b53;\n            animation-name: swapping-squares-animation-child-3-data-v-0ece1b53;\n    -webkit-animation-delay: 500ms;\n            animation-delay: 500ms;\n}\n.swapping-squares-spinner .square[data-v-0ece1b53]:nth-child(4) {\n    -webkit-animation-name: swapping-squares-animation-child-4-data-v-0ece1b53;\n            animation-name: swapping-squares-animation-child-4-data-v-0ece1b53;\n    -webkit-animation-delay: 0ms;\n            animation-delay: 0ms;\n}\n@-webkit-keyframes swapping-squares-animation-child-1-data-v-0ece1b53 {\n50% {\n        -webkit-transform: translate(150%,150%) scale(2,2);\n                transform: translate(150%,150%) scale(2,2);\n}\n}\n@keyframes swapping-squares-animation-child-1-data-v-0ece1b53 {\n50% {\n        -webkit-transform: translate(150%,150%) scale(2,2);\n                transform: translate(150%,150%) scale(2,2);\n}\n}\n@-webkit-keyframes swapping-squares-animation-child-2-data-v-0ece1b53 {\n50% {\n        -webkit-transform: translate(-150%,150%) scale(2,2);\n                transform: translate(-150%,150%) scale(2,2);\n}\n}\n@keyframes swapping-squares-animation-child-2-data-v-0ece1b53 {\n50% {\n        -webkit-transform: translate(-150%,150%) scale(2,2);\n                transform: translate(-150%,150%) scale(2,2);\n}\n}\n@-webkit-keyframes swapping-squares-animation-child-3-data-v-0ece1b53 {\n50% {\n        -webkit-transform: translate(-150%,-150%) scale(2,2);\n                transform: translate(-150%,-150%) scale(2,2);\n}\n}\n@keyframes swapping-squares-animation-child-3-data-v-0ece1b53 {\n50% {\n        -webkit-transform: translate(-150%,-150%) scale(2,2);\n                transform: translate(-150%,-150%) scale(2,2);\n}\n}\n@-webkit-keyframes swapping-squares-animation-child-4-data-v-0ece1b53 {\n50% {\n        -webkit-transform: translate(150%,-150%) scale(2,2);\n                transform: translate(150%,-150%) scale(2,2);\n}\n}\n@keyframes swapping-squares-animation-child-4-data-v-0ece1b53 {\n50% {\n        -webkit-transform: translate(150%,-150%) scale(2,2);\n                transform: translate(150%,-150%) scale(2,2);\n}\n}\n.onright[data-v-0ece1b53]{\n    margin-left:88%;\n    color: white;\n}\n", ""]);
 
 // exports
 
@@ -37894,38 +37919,53 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "wrapper" },
-    [
-      _c("h1", [_vm._v("TNC")]),
-      _vm._v(" "),
-      _c(
-        "longpress",
-        {
-          staticClass: "button is-large centerme",
-          attrs: {
-            duration: "5",
-            "pressing-text": "Detecting {$rcounter}",
-            "action-text": "Detected"
-          }
-        },
-        [
-          _c("img", {
-            staticClass: "photo",
-            attrs: {
-              src:
-                "https://images-na.ssl-images-amazon.com/images/I/51cVxhj2DKL.png",
-              width: "100"
-            }
-          })
-        ]
-      )
-    ],
-    1
-  )
+  return _c("div", { staticClass: "wrapper" }, [
+    _c("h1", [_vm._v("TNC")]),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "swapping-squares-spinner onright",
+        style: _vm.spinnerStyle
+      },
+      [
+        _c("div", { staticClass: "square" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "square" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "square" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "square" })
+      ]
+    ),
+    _c("h2", { staticClass: "has-text-danger" }, [
+      _vm._v("SCANNING 21 INDIVIDUALS IN THE AREA")
+    ]),
+    _vm._v(" "),
+    _vm._m(0)
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      { staticClass: "button is-large centerme", attrs: { href: "/details" } },
+      [
+        _c("img", {
+          staticClass: "photo",
+          attrs: {
+            src:
+              "https://images-na.ssl-images-amazon.com/images/I/51cVxhj2DKL.png",
+            width: "100"
+          }
+        })
+      ]
+    )
+  }
+]
 render._withStripped = true
 
 
